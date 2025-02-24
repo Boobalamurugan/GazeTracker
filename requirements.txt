@@ -1,0 +1,5 @@
+retinaface
+torch
+opencv-python
+pillow
+tqdm
