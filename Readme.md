@@ -22,10 +22,17 @@ The authors propose a novel method to estimate gaze targets using a large-scale 
 For more details, please refer to the original paper.
 
 ## Installation
+### Clone the Repository
+To get started, clone the repository:
+```bash
+git clone https://github.com/Boobalamurugan/GazeTracker.git
+cd GazeTracker
+```
+
+### Install Dependencies
 To set up the environment, install the required dependencies:
 ```bash
-pip install torch torchvision torchaudio
-pip install opencv-python numpy pillow retinaface tqdm
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -51,8 +58,18 @@ python main.py --video_path input.mp4 --output_videopath output.mp4 --start_time
 5. The processed video is saved as an output file.
 
 ## Model and Data
-- The model is loaded using `torch.hub.load('fkryan/gazelle', 'gazelle_dinov2_vitl14_inout')`.
+- The model is loaded using:
+  ```python
+  torch.hub.load('fkryan/gazelle', 'gazelle_dinov2_vitl14_inout')
+  ```
 - The `heatmap` output is used to estimate gaze target locations.
+
+## Contribution
+We welcome contributions! To contribute:
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a pull request.
 
 ## Credits
 - **Gaze-LLE authors** for their research and model.
@@ -61,6 +78,5 @@ python main.py --video_path input.mp4 --output_videopath output.mp4 --start_time
 
 ## License
 This project is released under the MIT License.
-
 
 
