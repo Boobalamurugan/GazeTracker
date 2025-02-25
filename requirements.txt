@@ -1,4 +1,4 @@
-retina-face==0.0.17
+retina-face
 torch
 opencv-python
 pillow
