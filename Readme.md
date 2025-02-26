@@ -1,5 +1,8 @@
 # GazeTracker
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18meezbx_PqS0CEKzwCbNejBBVQk0tUGV?usp=sharing)
+
+
 ## Overview
 GazeTracker is a deep learning-based gaze estimation system that detects human gaze direction in videos. This project utilizes the **Gaze-LLE (Gaze Target Estimation via Large-Scale Learned Encoders)** model to estimate gaze targets and visualize them in video frames. The implementation leverages **PyTorch**, **RetinaFace**, and **OpenCV** for efficient real-time gaze tracking.
 
@@ -38,7 +41,7 @@ pip install -r requirements.txt
 ## Usage
 Run the gaze tracker on a video using the command line:
 ```bash
-python main.py --video_path path/to/input.mp4 --output_videopath path/to/output.mp4
+python main.py --video_path path/to/input.mp4 --output_path path/to/output.mp4
 ```
 
 ### Optional Arguments
